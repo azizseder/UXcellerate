@@ -1,9 +1,13 @@
 :root {
-  --primary: #0077B6;
-  --secondary: #90E0EF;
-  --light-bg: #F8F9FA;
-  --text-dark: #212529;
-  --cta: #00B4D8;
+  --primary: #172D50;       /* Deep navy for headers or nav */
+  --base-dark: #212529;     /* Default text color, hero headlines */
+  --accent: #00B4D8;        /* CTAs, buttons, highlights */
+  --secondary: #90E0EF;     /* Hover states, illustrations */
+  --soft-dark: #343A40;     /* Card borders, shadows, transitions */
+  --text-muted: #6C757D;    /* Paragraphs, subtext */
+  --light-bg: #F8F9FA;      /* Hero, light sections */
+  --white: #ffffff;         /* Card and base backgrounds */
+  --border: #CED4DA;        /* Form inputs, dividers */
 }
 
 body {
