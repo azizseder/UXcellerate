@@ -43,11 +43,7 @@ body {
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.3); /* less opaque */
-  z-index: 1;
+  content: none;
 }
 
 .hero .container {
