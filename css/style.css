@@ -2,3 +2,8 @@ body {
   background-color: #212529;
   color: #fff;
 }
+
+.brand-ux {
+  color: #0d6efd; /* Bootstrap primary blue, or choose your preferred color */
+  font-weight: 700;
+}
