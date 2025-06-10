@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--secondary); /* This sets the background for the entire site */
 }
 
 .navbar {
@@ -33,7 +34,7 @@ body {
 
 .hero {
   min-height: 90vh;
-  background: url('../images/uxcellerate-hero-bg.jpg') center/cover no-repeat;
+  background: var(--secondary); /* Or any color you prefer */
   display: flex;
   align-items: center;
   justify-content: center;
