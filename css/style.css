@@ -1,9 +1,11 @@
 :root {
-  --primary: #0077B6;
-  --secondary: #90E0EF;
-  --light-bg: #F8F9FA;
-  --text-dark: #212529;
-  --cta: #00B4D8;
+  --primary: #172D50;       /* Deep navy for branding and headings */
+  --accent:  #00B4D8;       /* Bright call-to-action blue */
+  --secondary: #90E0EF;     /* Soft highlight / hover accent */
+  --light-bg: #F8F9FA;      /* Soft background */
+  --text-dark: #212529;     /* Default heading/body text */
+  --text-muted: #6C757D;    /* Paragraphs and subtext */
+  --border: #CED4DA;        /* Subtle dividers and outlines */
 }
 
 body {
@@ -16,12 +18,12 @@ body {
 h1, h2, h3, h4, h5 {
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--text-dark);
+  color: var(--primary);
 }
 
 p, .lead {
   font-size: 1.1rem;
-  color: #6c757d;
+  color: var(--text-muted);
 }
 
 section {
@@ -64,7 +66,7 @@ section {
 }
 
 .service-card {
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -80,11 +82,11 @@ section {
 blockquote {
   font-size: 1.25rem;
   font-style: italic;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .btn-primary {
-  background-color: var(--cta);
+  background-color: var(--accent);
   border: none;
   font-weight: 500;
   padding: 0.75rem 2rem;
