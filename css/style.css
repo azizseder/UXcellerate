@@ -7,3 +7,20 @@ body {
   color: #0d6efd; /* Bootstrap primary blue, or choose your preferred color */
   font-weight: 700;
 }
+
+.hero-banner {
+  background: none; /* uses the body bg, or set a custom color if you want */
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner h1,
+.hero-banner p {
+  color: #fff;
+}
+
+.hero-banner p {
+  font-style: italic;
+  opacity: 0.85;
+}
