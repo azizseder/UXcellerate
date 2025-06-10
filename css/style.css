@@ -10,27 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero {
-  background: url('https://images.unsplash.com/photo-1532619187608-e5375cab36ef') center/cover no-repeat;
-  color: white;
-  padding: 100px 0;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
 .navbar {
-  background-color: var(--primary);
-}
-
-.btn-primary {
-  background-color: var(--cta);
-  border: none;
-}
-
-.btn-primary:hover {
   background-color: var(--primary);
 }
 
@@ -50,10 +30,18 @@ body {
   margin-right: 8px;
   display: block;
 }
-
-.hero.text-center.text-white {
-  /* This ensures the hero section background image is correct for the homepage */
-  background: url('https://images.unsplash.com/photo-1520975698519-df544f2eb1dc') center/cover no-repeat;
-  padding: 100px 0;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+.hero {
+  background: linear-gradient(to bottom, #F8F9FA, #ffffff);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+.btn-primary {
+  background-color: #00B4D8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0077B6;
+}
+
