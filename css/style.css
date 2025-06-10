@@ -12,19 +12,20 @@ body {
   padding-bottom: 0;
 }
 
-.hero-banner h1,
-.hero-banner p {
+.hero-content h1,
+.hero-content p {
   color: #fff;
 }
 
-.hero-banner h1 {
-  margin-top: 0;         /* Remove default margin */
-  margin-bottom: 1rem;   /* Keep some space below */
-}
-
-.hero-banner p {
+.hero-content p {
   font-style: italic;
   opacity: 0.85;
+}
+
+.hero-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 
 .what-we-do {
