@@ -138,39 +138,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <h2 class="text-center mb-3 text-white">What We Do</h2>
     <p class="text-center text-white-50 mb-5">
-      We help digital-first businesses grow by providing strategic consulting, UX optimization, and performance audits tailored to your needs.
+      We help digital-first businesses grow by providing strategic consulting, marketing, creative, and technology services tailored to your needs.
     </p>
     <div class="row g-4 justify-content-center">
       <div class="col-md-4">
         <a href="service-strategy.html" class="card service-card h-100 text-decoration-none text-white text-center">
           <div class="card-body">
             <div class="mb-3">
-              <i class="bi bi-bar-chart-line" style="font-size: 2.5rem;"></i>
+              <i class="bi bi-lightbulb" style="font-size: 2.5rem;"></i>
             </div>
-            <h5 class="card-title">E-Commerce Strategy</h5>
-            <p class="card-text">Actionable roadmaps to drive customer engagement and sales growth.</p>
+            <h5 class="card-title">Strategy & Consulting</h5>
+            <p class="card-text">Expert guidance to define, plan, and accelerate your digital growth.</p>
           </div>
         </a>
       </div>
       <div class="col-md-4">
-        <a href="service-ux.html" class="card service-card h-100 text-decoration-none text-white text-center">
+        <a href="service-ecommerce.html" class="card service-card h-100 text-decoration-none text-white text-center">
           <div class="card-body">
             <div class="mb-3">
-              <i class="bi bi-emoji-smile" style="font-size: 2.5rem;"></i>
+              <i class="bi bi-cart4" style="font-size: 2.5rem;"></i>
             </div>
-            <h5 class="card-title">UX Optimization</h5>
-            <p class="card-text">Seamless user journeys that increase conversion and retention.</p>
+            <h5 class="card-title">E-Commerce Services</h5>
+            <p class="card-text">End-to-end solutions for building, optimizing, and scaling your online store.</p>
           </div>
         </a>
       </div>
       <div class="col-md-4">
-        <a href="service-audit.html" class="card service-card h-100 text-decoration-none text-white text-center">
+        <a href="service-performance-marketing.html" class="card service-card h-100 text-decoration-none text-white text-center">
           <div class="card-body">
             <div class="mb-3">
-              <i class="bi bi-speedometer2" style="font-size: 2.5rem;"></i>
+              <i class="bi bi-graph-up-arrow" style="font-size: 2.5rem;"></i>
             </div>
-            <h5 class="card-title">Performance Audits</h5>
-            <p class="card-text">Evaluate and enhance website performance across platforms and devices.</p>
+            <h5 class="card-title">Performance Marketing</h5>
+            <p class="card-text">Data-driven campaigns to maximize ROI across paid channels.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="service-content-brand.html" class="card service-card h-100 text-decoration-none text-white text-center">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-megaphone" style="font-size: 2.5rem;"></i>
+            </div>
+            <h5 class="card-title">Content & Brand Marketing</h5>
+            <p class="card-text">Engaging content and brand storytelling to connect with your audience.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="service-seo.html" class="card service-card h-100 text-decoration-none text-white text-center">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-search" style="font-size: 2.5rem;"></i>
+            </div>
+            <h5 class="card-title">SEO & Organic Growth</h5>
+            <p class="card-text">Boost your visibility and traffic with proven SEO strategies.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="service-creative-ux.html" class="card service-card h-100 text-decoration-none text-white text-center">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-palette" style="font-size: 2.5rem;"></i>
+            </div>
+            <h5 class="card-title">Creative & UX Services</h5>
+            <p class="card-text">Design and user experience solutions that delight and convert.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="service-tech-integration.html" class="card service-card h-100 text-decoration-none text-white text-center">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-cpu" style="font-size: 2.5rem;"></i>
+            </div>
+            <h5 class="card-title">Tech & Integration</h5>
+            <p class="card-text">Seamless technology solutions and integrations for your business.</p>
           </div>
         </a>
       </div>
@@ -267,6 +311,22 @@ window.addEventListener('DOMContentLoaded', function() {
       });
     }
   };
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const cards = document.querySelectorAll('.service-card');
+  function revealCards() {
+    const trigger = window.innerHeight * 0.95;
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < trigger) {
+        card.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealCards);
+  revealCards();
 });
 </script>
 </body>
