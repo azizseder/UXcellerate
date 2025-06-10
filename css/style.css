@@ -33,7 +33,9 @@ body {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(120deg, #90e0ef 0%, #00b4d8 100%), url('../images/uxcellerate-hero-bg.jpg') center/cover no-repeat;
+  background: 
+    linear-gradient(120deg, rgba(144,224,239,0.7) 0%, rgba(0,180,216,0.7) 100%),
+    url('../images/uxcellerate-hero-bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
