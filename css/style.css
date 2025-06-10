@@ -8,15 +8,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--text-dark);
-  background-color: var(--light-bg);
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1520975698519-df544f2eb1dc') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1532619187608-e5375cab36ef') center/cover no-repeat;
+  color: white;
   padding: 100px 0;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
 }
 
 .navbar {
@@ -33,11 +35,25 @@ body {
 }
 
 .service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #e0e0e0;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+  display: block;
+}
+
+.hero.text-center.text-white {
+  /* This ensures the hero section background image is correct for the homepage */
+  background: url('https://images.unsplash.com/photo-1520975698519-df544f2eb1dc') center/cover no-repeat;
+  padding: 100px 0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
