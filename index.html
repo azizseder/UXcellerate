@@ -45,10 +45,42 @@
         <div class="col-lg-7">
           <h1 class="display-4 fw-bold mb-3 text-white">Your Growth Strategy Partner in Digital Commerce</h1>
           <p class="lead text-white-50">"From strategy to execution, we partner with digital-first businesses to drive meaningful, measurable growth"</p>
+          <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Get in Touch
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <main>
