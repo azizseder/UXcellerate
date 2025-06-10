@@ -10,7 +10,9 @@ body {
 
 .hero-banner {
   background: none; /* uses the body bg, or set a custom color if you want */
-  min-height: 60vh;
+  min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   align-items: center;
 }
@@ -23,6 +25,10 @@ body {
 .hero-banner p {
   font-style: italic;
   opacity: 0.85;
+}
+
+.what-we-do {
+  padding-top: 3rem; /* or your preferred spacing */
 }
 
 .what-we-do .card {
