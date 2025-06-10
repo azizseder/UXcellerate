@@ -1,1 +1,47 @@
-:root { --primary: #0077B6; --secondary: #90E0EF; --light-bg: #F8F9FA; --text-dark: #212529; --cta: #00B4D8; } body { font-family: 'Poppins', sans-serif; } .navbar { background-color: var(--primary); } .service-card { transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #e0e0e0; } .service-card:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); } .navbar-logo { height: 40px; width: auto; margin-right: 8px; display: block; } .hero { background: linear-gradient(to bottom, #F8F9FA, #ffffff); padding-top: 100px; padding-bottom: 100px; } .btn-primary { background-color: #00B4D8; border: none; } .btn-primary:hover { background-color: #0077B6; }
+:root {
+  --primary: #0077B6;
+  --secondary: #90E0EF;
+  --light-bg: #F8F9FA;
+  --text-dark: #212529;
+  --cta: #00B4D8;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary);
+}
+
+.service-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+  display: block;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #F8F9FA, #ffffff);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btn-primary {
+  background-color: #00B4D8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0077B6;
+}
