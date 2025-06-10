@@ -23,7 +23,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
     'ad_storage': 'denied',
-    'analytics_storage': 'denied'
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
   });
 </script>
 <!-- End Google Consent Mode -->
@@ -247,7 +249,9 @@ window.addEventListener('DOMContentLoaded', function() {
     if (typeof gtag === "function") {
       gtag('consent', 'update', {
         'ad_storage': 'granted',
-        'analytics_storage': 'granted'
+        'analytics_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
       });
     }
   };
@@ -257,7 +261,9 @@ window.addEventListener('DOMContentLoaded', function() {
     if (typeof gtag === "function") {
       gtag('consent', 'update', {
         'ad_storage': 'denied',
-        'analytics_storage': 'denied'
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
       });
     }
   };
