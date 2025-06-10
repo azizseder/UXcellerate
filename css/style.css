@@ -12,7 +12,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--secondary); /* This sets the background for the entire site */
+  color: var(--base-dark);
+  background-color: var(--white);
 }
 
 .navbar {
@@ -64,11 +65,15 @@ body {
   color: #6c757d;
 }
 
+h1, h2, h3 {
+  color: var(--base-dark);
+}
+
 .btn-primary {
-  background-color: #00B4D8;
-  border: none;
+  background-color: var(--accent);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: #0077B6;
+  background-color: var(--primary);
 }
