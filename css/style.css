@@ -46,7 +46,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.7); /* subtle overlay for readability */
+  background: rgba(255,255,255,0.3); /* less opaque */
   z-index: 1;
 }
 
