@@ -8,11 +8,25 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
+  margin-bottom: 1rem;
   color: var(--text-dark);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+section {
+  padding: 5rem 0;
 }
 
 .navbar {
@@ -33,36 +47,50 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero {
-  background: linear-gradient(to bottom, #F8F9FA, #ffffff);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 90vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
-
-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 .service-card {
-  transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #555;
 }
 
 .btn-primary {
   background-color: var(--cta);
   border: none;
+  font-weight: 500;
 }
 
 .btn-primary:hover {
   background-color: var(--primary);
+}
+
+.btn-light {
+  color: var(--primary);
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .btn-light:hover {
@@ -70,7 +98,15 @@ section {
   color: var(--text-dark);
 }
 
+footer {
+  font-size: 0.9rem;
+}
+
 footer a {
   color: #ffffff;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
