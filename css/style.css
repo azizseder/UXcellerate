@@ -24,3 +24,27 @@ body {
   font-style: italic;
   opacity: 0.85;
 }
+
+.what-we-do .card {
+  background: #23272b;
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.what-we-do .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(13,110,253,0.15);
+  background: #0d6efd;
+  color: #fff;
+}
+
+.what-we-do .card i {
+  color: #0d6efd;
+  transition: color 0.2s;
+}
+
+.what-we-do .card:hover i {
+  color: #fff;
+}
