@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "eleventy",
+    "postbuild": "rm -rf docs && cpx '_site/**/*' docs",
     "start": "eleventy --serve",
     "deploy": "npx gh-pages -d _site"
   },
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
+    "cpx": "^1.5.0",
     "gh-pages": "^6.3.0"
   }
 }
