@@ -85,6 +85,53 @@
     </div>
   </section>
 
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Let’s Talk About Growing Your Business</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-white-50 mb-4">
+            Fill out the form and we’ll get back to you with tailored insights.
+          </p>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="company" class="form-label">Company Name</label>
+              <input type="text" class="form-control" id="company" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="brief" class="form-label">Brief</label>
+              <textarea class="form-control" id="brief" rows="3" required></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="privacy" required>
+              <label class="form-check-label" for="privacy">
+                I agree to the <a href="#" class="link-light text-decoration-underline">privacy policy</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+          <div id="formMessage" class="mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Main Content -->
   <main>
     <!-- What We Do Section -->
@@ -198,61 +245,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-
-<!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark text-white">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Let’s Talk About Growing Your Business</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="small text-white-50 mb-4">
-            Fill out the form and we’ll get back to you with tailored insights.
-          </p>
-          <form id="contactForm">
-            <form method="post" action="/contact">
-  <div class="mb-3">
-    <label for="name" class="form-label">Your Name</label>
-    <input type="text" class="form-control" id="name" name="name" required>
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Your Email</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  </div>
-  <div class="mb-3">
-    <label for="phone" class="form-label">Phone Number</label>
-    <input type="tel" class="form-control" id="phone" name="phone">
-  </div>
-  <div class="mb-3">
-    <label for="company" class="form-label">Company</label>
-    <input type="text" class="form-control" id="company" name="company">
-  </div>
-  <div class="mb-3">
-    <label for="service" class="form-label">Service of Interest</label>
-    <select class="form-select" id="service" name="service">
-      <option value="">Select a service</option>
-      <option value="strategy">Strategy & Consulting</option>
-      <option value="ecommerce">E-Commerce Services</option>
-      <option value="marketing">Performance Marketing</option>
-      <option value="content">Content and Brand Marketing</option>
-      <option value="seo">SEO and Organic Growth</option>
-      <option value="creative">Creative and UX Services</option>
-      <option value="tech">Tech and Integration</option>
-    </select>
-  </div>
-  <div class="mb-3">
-    <label for="message" class="form-label">How can we help you?</label>
-    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-  </div>
-  <div class="d-grid">
-    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-  </div>
-</form>
-          </form>
-          <div id="formMessage" class="mt-2"></div>
-        </div>
-      </div>
-    </div>
-  </div>
