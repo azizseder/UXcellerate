@@ -7,9 +7,8 @@ body {
   min-height: 60vh;
   display: flex;
   align-items: center;
-  background: none;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 3rem;   /* py-5 = 3rem top/bottom */
+  padding-bottom: 3rem;
 }
 
 .hero-content {
@@ -101,6 +100,21 @@ body {
 .service-card:hover i {
   color: #fff;
   transition: color 0.2s;
+}
+
+.strategy-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #212529;
+  letter-spacing: -1px;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .strategy-hero-title {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 992px) {
