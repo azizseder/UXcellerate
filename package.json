@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "deploy": "npx gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "nodemailer": "^7.0.3"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.1"
+    "@11ty/eleventy": "^3.1.1",
+    "gh-pages": "^6.3.0"
   }
 }
