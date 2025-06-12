@@ -61,21 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  if (document.getElementById('decline-cookies')) {
-    document.getElementById('decline-cookies').onclick = function() {
-      setCookie('cookieConsent', 'declined', 180);
-      document.getElementById('cookie-banner').style.display = 'none';
-      if (typeof gtag === "function") {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted',
-          'ad_user_data': 'granted',
-          'ad_personalization': 'granted'
-        });
-      }
-    };
-  }
-
   // Service card fade-in animation
   const cards = document.querySelectorAll('.service-card');
   function revealCards() {
