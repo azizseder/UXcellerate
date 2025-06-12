@@ -44,11 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     return null;
   }
 
+  // Show the cookie banner only if consent not given
   const banner = document.getElementById('cookie-banner');
   if (banner && !getCookie('cookieConsent')) {
     banner.style.display = 'block';
   }
 
+  // Accept button logic
   const acceptBtn = document.getElementById('accept-cookies');
   if (acceptBtn) {
     acceptBtn.addEventListener('click', function() {
