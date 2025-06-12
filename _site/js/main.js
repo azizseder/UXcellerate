@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('cookie-banner').style.display = 'none';
       if (typeof gtag === "function") {
         gtag('consent', 'update', {
-          'ad_storage': 'denied',
-          'analytics_storage': 'denied',
-          'ad_user_data': 'denied',
-          'ad_personalization': 'denied'
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
         });
       }
     };
