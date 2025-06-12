@@ -44,21 +44,32 @@ document.addEventListener('DOMContentLoaded', function() {
     return null;
   }
 
-  // Set consent to accepted by default
-  setCookie('cookieConsent', 'accepted', 365);
-
-  // (Optional) Show the banner for transparency
   const banner = document.getElementById('cookie-banner');
-  if (banner && !getCookie('cookieConsentBannerShown')) {
+  if (banner && !getCookie('cookieConsent')) {
     banner.style.display = 'block';
-    // Hide banner after Accept is clicked
-    const acceptBtn = document.getElementById('accept-cookies');
-    if (acceptBtn) {
-      acceptBtn.addEventListener('click', function() {
-        banner.style.display = 'none';
-        setCookie('cookieConsentBannerShown', 'yes', 365);
-      });
-    }
+  }
+
+  const acceptBtn = document.getElementById('accept-cookies');
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', function() {
+      setCookie('cookieConsent', 'accepted', 365);
+      banner.style.display = 'none';
+    });
+  }
+
+  if (document.getElementById('decline-cookies')) {
+    document.getElementById('decline-cookies').onclick = function() {
+      setCookie('cookieConsent', 'declined', 180);
+      document.getElementById('cookie-banner').style.display = 'none';
+      if (typeof gtag === "function") {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
+        });
+      }
+    };
   }
 
   // Service card fade-in animation

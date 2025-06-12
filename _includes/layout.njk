@@ -5,22 +5,24 @@
 {% include "footer.njk" %}
 
 <!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark text-white">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Let’s Talk About Growing Your Business</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="small text-white-50 mb-4">
-            Fill out the form and we’ll get back to you with tailored insights.
-          </p>
-          <form id="contactForm">
-            {% include "contact-form-fields.njk" %}
-          </form>
-          <div id="formMessage" class="mt-2"></div>
-        </div>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Let’s Talk About Growing Your Business</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="small text-white-50 mb-4">
+          Fill out the form and we’ll get back to you with tailored insights.
+        </p>
+        <form id="contactForm">
+          {% include "contact-form-fields.njk" %}
+        </form>
+        <div id="formMessage" class="mt-2"></div>
       </div>
     </div>
   </div>
+</div>
+
+<script src="/js/main.js"></script>
