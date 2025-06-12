@@ -44,19 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
     return null;
   }
 
-  // Show the cookie banner only if consent not given
-  const banner = document.getElementById('cookie-banner');
-  if (banner && !getCookie('cookieConsent')) {
-    banner.style.display = 'block';
-  }
+  // Set consent to accepted by default
+  setCookie('cookieConsent', 'accepted', 365);
 
-  // Accept button logic
-  const acceptBtn = document.getElementById('accept-cookies');
-  if (acceptBtn) {
-    acceptBtn.addEventListener('click', function() {
-      setCookie('cookieConsent', 'accepted', 365);
-      banner.style.display = 'none';
-    });
+  // (Optional) Show the banner for transparency
+  const banner = document.getElementById('cookie-banner');
+  if (banner && !getCookie('cookieConsentBannerShown')) {
+    banner.style.display = 'block';
+    // Hide banner after Accept is clicked
+    const acceptBtn = document.getElementById('accept-cookies');
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', function() {
+        banner.style.display = 'none';
+        setCookie('cookieConsentBannerShown', 'yes', 365);
+      });
+    }
   }
 
   if (document.getElementById('decline-cookies')) {
