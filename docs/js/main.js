@@ -44,23 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
     return null;
   }
 
-  if (document.getElementById('cookie-banner') && !getCookie('cookieConsent')) {
-    document.getElementById('cookie-banner').style.display = 'block';
+  const banner = document.getElementById('cookie-banner');
+  if (banner && !getCookie('cookieConsent')) {
+    banner.style.display = 'block';
   }
-  if (document.getElementById('accept-cookies')) {
-    document.getElementById('accept-cookies').onclick = function() {
-      setCookie('cookieConsent', 'accepted', 180);
-      document.getElementById('cookie-banner').style.display = 'none';
-      if (typeof gtag === "function") {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted',
-          'ad_user_data': 'granted',
-          'ad_personalization': 'granted'
-        });
-      }
-    };
+
+  const acceptBtn = document.getElementById('accept-cookies');
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', function() {
+      setCookie('cookieConsent', 'accepted', 365);
+      banner.style.display = 'none';
+    });
   }
+
   if (document.getElementById('decline-cookies')) {
     document.getElementById('decline-cookies').onclick = function() {
       setCookie('cookieConsent', 'declined', 180);
